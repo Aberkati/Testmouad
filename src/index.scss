@@ -15,13 +15,21 @@ body {
 }
 
 @media all and (max-width: 580px) {
+  .card {
+    text-align: center;
+    height: 300px !important;
+  }
   .colimage,
   .description {
     display: none;
   }
+  .coldetails {
+    width: 100% !important;
+  }
 }
 
 .linkbtn {
+  text-align: center;
   background-color: $mainColor;
   box-shadow: 3px 6px $blackColor;
   display: inline-block;
@@ -129,7 +137,6 @@ body {
 .card {
   border: 2px solid rgb(116, 113, 113);
   padding: 16px;
-  text-align: center;
   margin-bottom: 30px;
   height: 200px;
 }
@@ -164,6 +171,18 @@ body {
   .topnav input[type="text"] {
     border: 1px solid #ccc;
   }
+}
+
+.colimage {
+  min-height: 200px;
+  float: left;
+  width: 22%;
+}
+
+.coldetails {
+  min-height: 200px;
+  float: left;
+  width: 78%;
 }
 
 .pagination_section {
