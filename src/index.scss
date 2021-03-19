@@ -1,0 +1,179 @@
+$mainColor: #28336d;
+$blackColor: black;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.logo {
+  width: 170px;
+  margin-left: 73px;
+}
+
+.linkbtn {
+  background-color: $mainColor;
+  box-shadow: 3px 6px $blackColor;
+  display: inline-block;
+  width: 20%;
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border-radius: 3px;
+}
+
+.photochatacter {
+  width: 12%;
+  float: left;
+}
+.box .photochatacter {
+  width: 160px;
+  float: left;
+}
+
+h1 {
+  font-family: cursive;
+}
+
+.container2 {
+  display: flex;
+  width: 100%;
+}
+
+.column-1 {
+  flex-shrink: 0;
+  flex-basis: 70%;
+}
+.column-2 {
+  flex-basis: 70%;
+}
+.bordered {
+  border: 2px solid rgb(116, 113, 113);
+}
+
+.box {
+  padding: 10px;
+  margin: 1rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .container2 {
+    flex-direction: column;
+  }
+
+  .box {
+    margin: 0 0 1rem;
+  }
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: $mainColor;
+  height: 100px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: $blackColor;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  height: 100px;
+}
+
+.topnav .search-container {
+  float: right;
+}
+.container {
+  padding: 30px 30px;
+  margin: auto;
+}
+
+/* Sur les grands écrans, on limite la largeur du contenu */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.row {
+  margin: 0 -5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 1700px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.card {
+  border: 2px solid rgb(116, 113, 113);
+  padding: 16px;
+  text-align: center;
+  margin-bottom: 30px;
+  height: 200px;
+}
+
+.topnav input[type="text"] {
+  padding: 11px;
+  margin-top: 30px;
+  font-size: 17px;
+  border: none;
+  margin-right: 100px;
+  width: 280px;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a,
+  .topnav input[type="text"],
+  .topnav .search-container {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type="text"] {
+    border: 1px solid #ccc;
+  }
+}
+
+.pagination_section {
+  text-align: center;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.pagination_section ul {
+  color: $blackColor;
+  padding: 10px 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pagination_section ul:hover:not(.active) {
+  background-color: $mainColor;
+  color: white;
+}
