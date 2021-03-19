@@ -14,6 +14,13 @@ body {
   margin-left: 73px;
 }
 
+@media all and (max-width: 580px) {
+  .colimage,
+  .description {
+    display: none;
+  }
+}
+
 .linkbtn {
   background-color: $mainColor;
   box-shadow: 3px 6px $blackColor;
@@ -28,16 +35,13 @@ body {
 }
 
 .photochatacter {
-  width: 12%;
+  height: 200px;
+  width: 200px;
   float: left;
 }
 .box .photochatacter {
   width: 160px;
   float: left;
-}
-
-h1 {
-  font-family: cursive;
 }
 
 .container2 {
@@ -63,7 +67,7 @@ h1 {
 
 @media only screen and (max-width: 900px) {
   .container2 {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .box {
@@ -128,6 +132,9 @@ h1 {
   text-align: center;
   margin-bottom: 30px;
   height: 200px;
+}
+.card > p {
+  font-size: 20px;
 }
 
 .topnav input[type="text"] {

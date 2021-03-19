@@ -11,8 +11,10 @@ const CardItem = ({ character, history }) => {
           />
         </div>
         <div className="coldetails">
-          <h3>{character.name}</h3>
-          <p>{character.description}</p>
+          <h1>{character.name}</h1>
+          <p className="description">
+            {character.description.split(" ").slice(0, 15).join(" ")}
+          </p>
 
           <Link to={`/character/${character.id}`} className="linkbtn">
             See Details
