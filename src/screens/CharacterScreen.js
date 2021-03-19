@@ -29,9 +29,9 @@ const CharacterScreen = ({ match }) => {
             <div className="column-1 box">
               <h1>{character.name}</h1>
               {character?.description?.length === 0 ? (
-                <p>No Description yet</p>
+                <p className="description">No Description</p>
               ) : (
-                <p>{character.description}</p>
+                <p className="description">{character.description}</p>
               )}
             </div>
             <div className="column-2 box">

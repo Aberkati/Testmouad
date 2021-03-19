@@ -16,24 +16,27 @@ const Navbar = () => {
     }
   };
   return (
-    <div className="topnav">
-      <Link to="/">
-        <img className="logo" src="/marvel.png" alt="Marvel Logo" />
-      </Link>
-
-      <div className="search-container">
-        <form onSubmit={onSubmit}>
-          <input
-            autoComplete="off"
-            type="text"
-            placeholder="Search.."
-            name="search"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-          />
-        </form>
-      </div>
-    </div>
+    <nav>
+      <ul>
+        <li className="logo">
+          <Link to="/">
+            <img className="icon" src="/marvel.png" alt="Marvel Logo" />
+          </Link>
+        </li>
+        <li className="search-icon">
+          <form onSubmit={onSubmit}>
+            <input
+              type="text"
+              autoComplete="off"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              name="search"
+              placeholder="Enter a SuperHero"
+            />
+          </form>
+        </li>
+      </ul>
+    </nav>
   );
 };
 

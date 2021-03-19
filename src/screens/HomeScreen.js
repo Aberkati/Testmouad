@@ -25,7 +25,9 @@ const HomeScreen = () => {
       {loading ? (
         <Spinner />
       ) : characters.length === 0 || characters.length === 0 ? (
-        <h3>No Results</h3>
+        <>
+          <h3 className="noresult">No Results</h3>
+        </>
       ) : (
         <>
           <Cards>
