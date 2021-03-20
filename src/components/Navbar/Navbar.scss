@@ -1,0 +1,48 @@
+$mainColor: #28336d;
+$blackColor: black;
+$whiteColor: white;
+
+nav {
+  color: $whiteColor;
+  background: $mainColor;
+  padding: 10px 40px 10px 70px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li.logo {
+  flex: 1;
+  margin-left: 25px;
+}
+
+nav ul .search-icon {
+  height: 40px;
+  display: flex;
+}
+
+nav .logo .icon {
+  width: 170px;
+  height: 70px;
+}
+
+nav ul .search-icon input {
+  height: 100%;
+  width: 500px;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  font-size: 16px;
+  border-radius: 35px;
+}
+
+@media screen and (max-width: 500px) {
+  nav ul .search-icon input {
+    width: 250px !important;
+  }
+}

@@ -1,0 +1,21 @@
+$mainColor: #28336d;
+$blackColor: black;
+
+.pagination_section {
+  text-align: center;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.pagination_section ul {
+  color: $blackColor;
+  padding: 10px 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pagination_section ul:hover:not(.active) {
+  background-color: $mainColor;
+  color: white;
+}

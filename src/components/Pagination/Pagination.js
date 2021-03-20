@@ -1,7 +1,6 @@
-import React from "react";
-
+import "./Pagination.scss";
 const Pagination = ({ charactersPerPage, totalPosts, paginate }) => {
-  const pageNumbers = [];
+  let pageNumbers = [];
   for (let i = 1; i <= Math.ceil(totalPosts / charactersPerPage); i++) {
     pageNumbers.push(i);
   }

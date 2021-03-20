@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from "react-redux";
-import Cards from "../components/Cards";
-import CardItem from "../components/CardItem";
-import Spinner from "../components/Spinner";
-import Pagination from "../components/Pagination";
+import Cards from "../components/Card/Cards";
+import CardItem from "../components/Card/CardItem";
+import Spinner from "../components/Spinner/Spinner";
+import Pagination from "../components/Pagination/Pagination";
 import { changeCurrentPage } from "../actions/paginationActions";
 
 const HomeScreen = () => {
@@ -24,7 +24,7 @@ const HomeScreen = () => {
     <div className="container">
       {loading ? (
         <Spinner />
-      ) : characters.length === 0 || characters.length === 0 ? (
+      ) : characters.length === 0 ? (
         <>
           <h3 className="noresult">No Results</h3>
         </>

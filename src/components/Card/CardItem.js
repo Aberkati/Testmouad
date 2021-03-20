@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-const CardItem = ({ character, history }) => {
+import "./Card.scss";
+const CardItem = ({ character }) => {
   return (
     <div className="column">
       <div className="container2 bordered">

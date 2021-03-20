@@ -5,7 +5,7 @@ import {
   listCharacterComics,
   listCharacterDetails,
 } from "../actions/characterActions";
-import Spinner from "../components/Spinner";
+import Spinner from "../components/Spinner/Spinner";
 
 const CharacterScreen = ({ match }) => {
   const dispatch = useDispatch();

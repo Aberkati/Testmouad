@@ -1,7 +1,8 @@
 import { useState } from "react";
+import "./Navbar.scss";
 import { useDispatch } from "react-redux";
 import { Link, useHistory } from "react-router-dom";
-import { listCharacters } from "../actions/characterActions";
+import { listCharacters } from "../../actions/characterActions";
 
 const Navbar = () => {
   let history = useHistory();
@@ -11,9 +12,7 @@ const Navbar = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     query.length > 0 && dispatch(listCharacters(query));
-    if (window.location.pathname !== "/") {
-      history.push("/");
-    }
+    window.location.pathname !== "/" && history.push("/");
   };
   return (
     <nav>
